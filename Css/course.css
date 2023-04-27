@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+
+
+/* Designing header section*/
+.sub_header {
+    width: 100%;
+   min-height: 50vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+      
+    
+}
+.sub_header h1{
+    text-align: center;
+    padding-top:100px ;
+    color: #fff;
+
+}
+.sub_header .fa{
+    display: none;
+}
+
+
+/* Designing  navbar part*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2% 6%;
+
+}
+
+nav img{
+    width: 150px;
+}
+.nav_links{
+    flex: 1;
+    text-align: right;
+    
+}
+
+.nav_links li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.nav_links li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav_links li::after{
+    display: block;
+    margin: auto;
+    content: '';
+    width: 0;    /* for hidden underline */
+    height: 3px;
+    background-color: #f44336;
+    transition: 0.7s;
+}
+
+.nav_links li:hover::after{
+    width: 100%;  /* for show underline */
+}
+
+
+
+/* For responsive other display size header section*/
+@media(max-width:700px){
+    
+   
+
+    .nav_links ul li{
+        display: block;
+    }
+    .nav_links{
+        display: none;
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        text-align: left;
+        background: #f44336;
+        transition: 1s;
+        z-index: 1;
+    }
+  .sub_header  .fa{
+        display: block;
+        font-size: 22px;
+        margin:10px ;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+/* Complete Header section */
+
+
+/* Design course section*/
+.course{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+ 
+}
+
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.course h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+.course P{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.course .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.course .col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.course .col:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+}
+
+/* Responsive for course section*/
+@media(max-width:700px){
+    .course .row{
+        flex-direction: column;
+    }
+}
+
+/* Completed course section */
+
+
+
+
+
+   /* Facilites section*/
+
+   .facilites{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+   }
+   .facilites .row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5%;
+   }
+   .facilites .col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 5px;
+   }
+
+   .facilites img{
+    width: 100%;
+    border-radius: 10px;
+    
+   }
+
+   .facilites h3{
+    margin: 16px 0px;
+     }
+
+     .facilites .col p{
+        text-align: justify;
+        padding: 0px;
+        
+     }
+
+
+     /* Responsive for facilites section*/
+
+     @media(max-width:700px){
+        .facilites .row{
+            flex-direction: column;
+        }
+     }
+     /* End facilites section*/
+
+
+
+    
+
+     /* footer section*/
+
+     .footer{
+        width: 100%;
+        background-color: rgba(32, 19, 32, 0.632);
+        margin: auto;
+        padding: 30px 0px ;
+        text-align: center;
+        color: #fff3f3;
+     }
+
+     .footer h4{
+        margin: 20px 0px 25px 0px;
+        font-weight: 600;
+     }
+
+     .footer .fa{
+        color: #f44336;
+        margin: 0 13px;
+        padding: 18px 0px;
+        cursor: pointer;
+     }
+
+     .footer .fa-heart{
+        padding: 0;
+     }

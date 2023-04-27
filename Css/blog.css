@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+
+
+
+/* Designing header section*/
+.sub_header {
+    width: 100%;
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.sub_header h1 {
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+
+}
+
+.sub_header .fa {
+    display: none;
+}
+
+
+/* Designing  navbar part*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2% 6%;
+
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav_links {
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.nav_links li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav_links li::after {
+    display: block;
+    margin: auto;
+    content: '';
+    width: 0;
+    /* for hidden underline */
+    height: 3px;
+    background-color: #f44336;
+    transition: 0.7s;
+}
+
+.nav_links li:hover::after {
+    width: 100%;
+    /* for show underline */
+}
+
+/* For responsive other display size header section*/
+@media(max-width:700px) {
+
+
+
+    .nav_links ul li {
+        display: block;
+    }
+
+    .nav_links {
+        display: none;
+        width: 200px;
+        height: 50vh;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        text-align: left;
+        background: #f44336;
+        transition: 1s;
+        overflow: hidden;
+        z-index:3;
+    }
+
+    .sub_header .fa {
+        display: block;
+        font-size: 22px;
+        margin: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+/* Complete Header section */
+
+
+/* Blog section */
+
+.blog {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px;
+    z-index: 1;
+}
+
+.blog .row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+ 
+    
+}
+.blog .col {
+    flex-basis: 50%;
+    margin: 20px;
+    
+    
+  
+}
+.blog .col_left {
+    flex-basis: 65%;
+     
+  
+}
+
+.blog .col_left img {
+    width: 100%;
+}
+
+.blog .col_left h2 {
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0px;
+}
+
+.blog .col_left p {
+    color: #999;
+    padding: 0px;
+    text-align: justify;
+}
+
+
+.blog .col_right{
+    flex-basis: 35%;
+}
+
+.blog .col_right h3{
+    background: #f44336;
+    color: #fff;
+    padding: 7px 0px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog .col_right div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* form part */
+
+.comentbox{
+    width: 80%;
+    margin:100px  auto;
+    border: 1px solid #ccc;
+     padding: 10px 20px;
+     border-radius: 5px;
+     
+}
+
+.comentbox h3{
+    text-align: left;
+
+}
+
+.comentbox input,.comentbox textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.btn{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-size: 13px;
+    color: #f44336;
+    background: transparent;
+    border: 1px solid #f44336;
+    padding: 10px 10px;
+    cursor: pointer;
+    
+    
+}
+
+.btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.8s;
+    color:#fff;
+}
+
+
+@media (max-width:700px){
+        .blog .row{
+            width: 80%;
+            margin: auto;
+            flex-direction: column;
+        }
+}
+
+
+
+/* footer section*/
+
+.footer {
+    width: 100%;
+    background-color: rgba(32, 19, 32, 0.632);
+    margin: auto;
+    padding: 30px 0px;
+    text-align: center;
+    color: #fff3f3;
+}
+
+.footer h4 {
+    margin: 20px 0px 25px 0px;
+    font-weight: 600;
+}
+
+.footer .fa {
+    color: #f44336;
+    margin: 0 13px;
+    padding: 18px 0px;
+    cursor: pointer;
+}
+
+.footer .fa-heart {
+    padding: 0;
+}
